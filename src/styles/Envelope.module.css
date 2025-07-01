@@ -4,8 +4,41 @@
     background-color: #F7567c;
     border: 3px solid #fffae3 ;
     border-radius: 10px;
-    position: absolute;
+
     top: 50%;
     left: 50%;
+    position:relative;
     transform: translate(-50%, -50%);
  }
+.borderOfTop {
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 105px solid #fffae3; 
+    border-radius: 10px;
+    position: absolute; 
+}
+
+.topOfContainer {
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 100px solid #F7567c; 
+    border-radius: 10px;
+    position: absolute;
+    
+    z-index: 1;
+}
+
+.heartIcon {
+  position: absolute;
+  top: 49%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fffae3; 
+  font-size: 30px; 
+  cursor: pointer;
+  z-index: 2;
+}
