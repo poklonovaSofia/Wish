@@ -1,12 +1,29 @@
 import { FaHeart } from 'react-icons/fa';
 import styles from '../styles/Envelope.module.css' ;
-import {Wish} from './wish';
+import {Wish} from './Wish'
 import { useState } from 'react';
 export const Envelope = () => {
     const [isShaking, setIsShaking] = useState(false);
     const [wishMessage, setWishMessage] = useState('');
     const [isWishVisible, setIsWishVisible] = useState(false);
-    const wishes = [ 'Have a good day', 'You are cute', 'My boy', 'Love you' ];
+ const wishes = [
+  "You make my heart smile 💖",
+  "You're my favorite notification 📩",
+  "A hug in words, just for you 🤗",
+  "You're the reason today feels better 💝",
+  "One wish: you always feel loved 💌",
+  "You matter. More than you know 💗",
+  "You're enough, just as you are 🤍",
+
+  "Лябу-лябу, бу-бу-лябу 🐾",
+  "Хочеш совет? 🤔",
+  "Го в пабжи! 🎮",
+  "Напиши своїй кіці — їй буде приємно 💌",
+  "Купи собі щось смакотне — ти це заслужив(ла) 🍩",
+  "ОБНІМАТЬ! 🤗",
+  "Люблю тебе ❤️",
+  "Зроби сніданочок пж💛"
+];
     const moveLikeBell = () => {
         if (isShaking) return;
         setIsShaking(true);
@@ -27,6 +44,7 @@ export const Envelope = () => {
 
     return(
     <>
+  
     <div className={`${styles.container} ${isShaking ? styles.shake : ''}`} onTouchMove={moveLikeBell} onMouseEnter={moveLikeBell} onClick={giveRandomWish}>
         <div className={styles.borderOfTop}>
            
