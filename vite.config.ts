@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+  base: '/Wish/',   
   plugins: [
     react(),
     VitePWA({
@@ -10,7 +11,7 @@ export default defineConfig({
       manifest: {
         name: 'Wish App',
         short_name: 'Wish',
-        start_url: '.',
+        start_url: '.',  
         display: 'standalone',
         background_color: '#F7567c',
         theme_color: '#F7567c',
